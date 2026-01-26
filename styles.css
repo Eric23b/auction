@@ -1,0 +1,109 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color);
+    /* background-color: var(--background_color); */
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    /* font-size: x-large; */
+}
+
+body{
+    background-image: url(images/background1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1, h2, h3, p{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(240, 215, 174);
+    /* background-color: rgb(182, 226, 226); */
+    opacity: 0.9;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+a{
+    cursor: pointer;
+    /* text-decoration: none; */
+}
+
+.background-picture{
+    /* position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0; */
+    /* background: linear-gradient(to top left, rgba(63, 37, 14, 0), rgba(255, 255, 255, 1)); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* right: 0; */
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.background-picture img{
+    position: relative;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    height: 100vh;
+    object-fit: cover;
+    /* overflow: hidden; */
+    z-index: -1;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    height: 100vh;
+    max-width: 50rem;
+    padding: 1rem;
+    margin: auto;
+    overflow: auto;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    aspect-ratio: 1;
+    width: 10rem;
+}
+
+.auction-link{
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.auction-link:hover{
+    text-decoration: underline;
+}
+
+.spacer{
+    /* display: block; */
+    height: 10rem;
+    min-height: 10rem;
+}
+
+@media screen and (min-width: 480px) {
+    .spacer{
+        /* display: block; */
+        height: 0;
+        min-height: 0;
+    }
+  }
