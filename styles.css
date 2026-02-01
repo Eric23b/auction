@@ -129,6 +129,12 @@ form button:hover{
     background-color: rgb(224, 206, 176);
 }
 
+iframe{
+    width: 100%;
+    max-width: 50rem;
+
+}
+
 .background-picture{
     /* position: fixed;
     width: 100%;
