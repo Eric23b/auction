@@ -132,7 +132,7 @@ form button:hover{
 iframe{
     width: 100%;
     max-width: 50rem;
-
+    border-radius: 0.5rem;
 }
 
 .background-picture{
