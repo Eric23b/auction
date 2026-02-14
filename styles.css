@@ -60,22 +60,9 @@ body{
     overflow: hidden;
 }
 
-h1, h2, h3, p{
-    width: 100%;
-    max-width: 50rem;
-    text-align: center;
-    padding: 1rem;
-    background-color: rgb(240, 215, 174);
-    /* background-color: rgb(182, 226, 226); */
-    opacity: 0.9;
-    border: none;
-    border-radius: 0.5rem;
-}
-
 a{
     cursor: pointer;
     color: black;
-    /* text-decoration: none; */
 }
 
 form input{
@@ -136,15 +123,9 @@ iframe{
 }
 
 .background-picture{
-    /* position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0; */
-    /* background: linear-gradient(to top left, rgba(63, 37, 14, 0), rgba(255, 255, 255, 1)); */
     position: absolute;
     top: 0;
     left: 0;
-    /* right: 0; */
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
@@ -154,10 +135,8 @@ iframe{
     position: relative;
     top: 0;
     left: 0;
-    /* width: 100%; */
     height: 100vh;
     object-fit: cover;
-    /* overflow: hidden; */
     z-index: -1;
 }
 
@@ -168,11 +147,63 @@ iframe{
     align-items: center;
     gap: 1rem;
     height: 100vh;
-    /* max-width: 50rem; */
     padding: 1rem;
     margin: auto;
     overflow: auto;
+}
+
+.header{
+    width: 100%;
+    max-width: 50rem;
+    text-align: center;
+    padding-top: 1.75rem;
+    padding-bottom: 1.5rem;
+    background-color: rgb(240, 215, 174);
+    opacity: 0.9;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.header *{
+    line-height: 0.5em;
+}
     
+.header h2{
+    position: relative;
+}
+    
+.header h3{
+    font-size: 1.25rem;
+}
+    
+.header img{
+    display: inline;
+    position: absolute;
+    width: 3.5rem;
+    bottom: -0.5rem;
+}
+
+.section{
+    width: 100%;
+    max-width: 50rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(240, 215, 174);
+    opacity: 0.9;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.inline{
+    display: inline;
+}
+
+.green{
+    color: rgb(45, 71, 45);
+}
+
+.red{
+    color: rgb(150, 50, 34);
 }
 
 .logo{
@@ -203,7 +234,6 @@ iframe{
     text-align: center;
     padding: 1rem;
     background-color: rgb(240, 215, 174);
-    /* background-color: rgb(182, 226, 226); */
     opacity: 0.9;
     border: none;
     border-radius: 0.5rem;
@@ -214,14 +244,32 @@ iframe{
 }
 
 .spacer{
-    /* display: block; */
     height: 10rem;
     min-height: 10rem;
 }
 
 @media screen and (min-width: 480px) {
+    .header h1{
+        font-size: 2.5rem;
+    }
+    
+    .header h2{
+        font-size: 2rem;
+    }
+    
+    .header h3{
+        font-size: 1.75rem;
+    }
+
+    .header *{
+        line-height: 0.7em;
+    }
+    
+    /* .header img{
+        bottom: -0.5rem;
+    } */
+
     .spacer{
-        /* display: block; */
         height: 0;
         min-height: 0;
     }
